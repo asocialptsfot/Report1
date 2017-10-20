@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Report</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="content" content="5" id="getVersion">
+        <meta name="content" content=" " id="json">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="datatables.min.js"></script>
+        <script type="text/javascript" src="plotly-latest.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="metal.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <h1 class="gradient-text">Report</h1>
+            <link property async href="http://fonts.googleapis.com/css?family=Audiowide" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css">
+        </nav>
+        <script type="text/javascript">
+            var a = window.screen.availHeight-document.getElementById("navbar").clientHeight+739;
+            document.write('<style type="text/css">.container, #cover, #cover-1 {min-height:'+a.toString()+'px}</style>');
+        </script>
+        <article class="container">
+            <div id="cover">
+            <div id="cover-1">
+                <br><br><br><br><br><br><br><br>
+                <div id="paper">
+                    <div id="max"></div>
+                    <table id="page_table" class="data">
+                        <thead><tr><th>Unix timestamp</th><th>Value</th><th>Time</th></tr></thead>
+                    </table>
+                    <br><br><br><br>
+                    <div id="graph" style="width: 600px;height: 500px;margin: 0px auto"></div>
+                </div>
+            </div>
+            </div>
+        </article>
+        <aside>
+            <script type="text/javascript" src="graph.js"></script>
+            <script type="text/javascript" src="tableinitialize.js"></script>
+        </aside>
+    </body>
+</html>
